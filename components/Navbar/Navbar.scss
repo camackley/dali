@@ -1,0 +1,14 @@
+@import "../../assets/scss/variables.scss";
+
+.navbar {
+  padding: 0 16px;
+  min-width: 100% !important;
+
+  &__logo {
+    color: $cm-blue;
+    font-size: $title;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+}
