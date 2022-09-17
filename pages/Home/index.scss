@@ -2,4 +2,61 @@
 
 * {
   font-family: $default-font-family;
+  background-color: $cm-gray;
+}
+
+.home {
+  min-width: 100% !important;
+  min-height: 100% !important;
+  padding: 16px !important;
+
+  &__avatar {
+    margin-top: 50px;
+    width: 50%;
+
+    &-mobile {
+      width: 100%;
+    }
+  }
+
+  &__caption {
+    margin-top: 50px;
+    cursor: default;
+
+    h2 {
+      margin: 0;
+      color: $cm-black;
+      font-size: $title;
+    }
+
+    p {
+      font-size: $sub-title;
+      line-height: 26px;
+    }
+
+    &--name {
+      cursor: pointer !important;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-decoration-color: $cm-green;
+
+      &-icon {
+        color: $cm-green;
+      }
+    }
+
+    &--company {
+      color: $cm-green;
+    }
+
+    &--company:hover {
+      color: $cm-gray;
+      padding: 2px !important;
+      margin: 1px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      background-color: $cm-green;
+    }
+  }
 }
