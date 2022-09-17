@@ -13,6 +13,7 @@
     "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix"
   },
   "dependencies": {
+    "@iconscout/vue-unicons": "^0.0.3",
     "@nuxt/content": "^1.15.1",
     "@nuxtjs/axios": "^5.13.6",
     "bootstrap": "^4.6.1",
@@ -29,6 +30,7 @@
     "@babel/eslint-parser": "^7.16.3",
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/device": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^8.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@types/webfontloader": "^1.6.34",

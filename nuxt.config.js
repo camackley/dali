@@ -19,10 +19,13 @@ export default {
   css: [],
   plugins: [{ src: './plugins/FontLoader.ts', ssr: false }],
   components: true,
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/device'],
   modules: ['bootstrap-vue/nuxt', '@nuxtjs/axios', '@nuxt/content'],
   axios: {
     baseURL: '/',
+  },
+  compilerOptions: {
+    types: ['@nuxt/types', '@nuxtjs/device'],
   },
   content: {},
   build: {},
