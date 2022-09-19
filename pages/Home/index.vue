@@ -35,5 +35,12 @@
   </div>
 </template>
 
+<router>
+  {
+    name: 'Home',
+    path: '/'
+  }
+</router>
+
 <script src='./index.ts' lang='ts'></script>
 <style src='./index.scss' lang='scss' scoped></style>
