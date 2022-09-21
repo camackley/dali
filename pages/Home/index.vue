@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-12 col-md text-center">
         <img
-          :class="['home__avatar', { 'home__avatar-mobile': $device.isMobileOrtablet }]"
+          :class="['home__avatar', { 'home__avatar-mobile': $device.isMobileOrTablet }]"
           :src="avatarUrl"
           alt="Mackley photo"
         >
@@ -17,14 +17,17 @@
         </h2>
         <p>
           I'm
-          <span class="home__caption--name">
+          <span
+            class="home__caption--name"
+            @click="playNameAudio()"
+          >
             Mackley Carmona
             <IconVolume size="18px" class="home__caption--name-icon align-top"/>
           </span>,
           a software engineer at
           <a
             href="https://torre.co"
-            class="home__caption--company"
+            :class="['home__caption--company', { 'home__caption--hover': !$device.isMobileOrTablet }]"
             target="_blank"
           >
             @torre</a>

@@ -47,15 +47,15 @@
 
     &--company {
       color: $cm-green;
+      text-decoration: none;
     }
 
-    &--company:hover {
+    &--hover:hover {
       color: $cm-gray;
       padding: 2px !important;
       margin: 1px;
       cursor: pointer;
       border-radius: 5px;
-      text-decoration: none;
       background-color: $cm-green;
     }
   }
