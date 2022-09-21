@@ -18,7 +18,7 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/Home",
+    path: "/",
     component: _6f81920c,
     name: "Home"
   }],
