@@ -24,7 +24,8 @@ export default Vue.extend({
       this.audio = new Audio(this.nameAudioUrl);
     },
     playNameAudio(): void {
-      this.audio?.play();
+      alert("Play audio");
+      // this.audio?.play();
     }
   }
 });
