@@ -4,11 +4,14 @@
 
     <div class="row">
       <div class="col-12 col-md text-center">
-        <img
-          :class="['home__avatar', { 'home__avatar-mobile': $device.isMobileOrTablet }]"
+        <nuxt-img 
+          class="home__avatar"
           :src="avatarUrl"
-          alt="Mackley photo"
-        >
+          alt="Mackley Carmona photos"
+          :width="avatarImgSizes.width"
+          :height="avatarImgSizes.height"
+          loading="lazy"
+        />
       </div>
   
       <div class="home__caption col-12 col-md">

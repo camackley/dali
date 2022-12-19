@@ -19,13 +19,30 @@ export default Vue.extend({
   mounted() {
     this.loadNameAudio();
   },
+  computed: {
+    windowsSize(): { [key:string]: number } {
+      if(this,process.client) {
+        return {
+          width: window.innerWidth,
+          height: window.innerHeight,
+        }
+      }
+
+      return {}
+    },
+    avatarImgSizes(): { [key:string]: number } {
+      return {
+        width: this.windowsSize.width * 0.4,
+        height: this.windowsSize.height * 0.8
+      }
+    }
+  },
   methods: {
     loadNameAudio(): void  {
       this.audio = new Audio(this.nameAudioUrl);
     },
     playNameAudio(): void {
-      alert("Play audio");
-      // this.audio?.play();
+      this.audio?.play();
     }
   }
 });
