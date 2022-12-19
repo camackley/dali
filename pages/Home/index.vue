@@ -26,12 +26,11 @@
           </span>,
           a software engineer at
           <a
-            href="https://torre.co"
+            :href="torreUrl"
             :class="['home__caption--company', { 'home__caption--hover': !$device.isMobileOrTablet }]"
             target="_blank"
-          >
-            @torre</a>
-          and appasionated to never stop learning
+          >torre</a>
+          and passionate about never stopping learning
         </p>
       </div>
     </div>

@@ -51,12 +51,8 @@
     }
 
     &--hover:hover {
-      color: $cm-gray;
-      padding: 2px !important;
-      margin: 1px;
       cursor: pointer;
-      border-radius: 5px;
-      background-color: $cm-green;
+      text-decoration: underline;
     }
   }
 }
