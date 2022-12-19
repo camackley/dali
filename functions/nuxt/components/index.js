@@ -1,4 +1,6 @@
+export const About = () => import('../../components/About/About.ts' /* webpackChunkName: "components/about" */).then(c => wrapFunctional(c.default || c))
 export const Navbar = () => import('../../components/Navbar/Navbar.ts' /* webpackChunkName: "components/navbar" */).then(c => wrapFunctional(c.default || c))
+export const Home = () => import('../../components/Home/Home.ts' /* webpackChunkName: "components/home" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

@@ -1,0 +1,23 @@
+@import "../../assets/scss/variables.scss";
+
+.about {
+  margin: 0 -16px;
+  padding: 16px;
+  color: $cm-gray;
+  background-color: $cm-blue;
+
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    padding-left: 16px;
+    margin-bottom: 0;
+  }
+
+  &__summary {
+    font-size: $body;
+    text-align: justify;
+     font-weight: lighter;
+  }
+}

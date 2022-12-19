@@ -1,0 +1,10 @@
+@import "../../assets/scss/variables.scss";
+
+* {
+  font-family: $default-font-family;
+  background-color: $cm-gray;
+}
+
+.index {
+  padding: 16px;
+}
