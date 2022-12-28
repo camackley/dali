@@ -32,7 +32,7 @@ export default Vue.extend({
   },
   methods: {
     sendEmail(): void {
-      console.log("Sending email...");
+      window.open("mailto:mackleycarmonaalvarez@gmail.com", "_blank");
     },
     scrollToTop(): void {
       window.scroll({

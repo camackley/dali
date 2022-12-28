@@ -3,7 +3,7 @@
     class="button"
     :style="componentStyle"
     type="button"
-    @click="() => $emit('on-lick')"
+    @click="() => $emit('on-click')"
   >
     <component
       v-if="iconDirection == 'start'"

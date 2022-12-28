@@ -37,7 +37,7 @@
         text="Open Curriculum Vitae"
         icon="UilExternalLinkAlt"
         icon-direction="end"
-        @on-lick="openCV"
+        @on-click="openCV"
       />
 
     </div>
