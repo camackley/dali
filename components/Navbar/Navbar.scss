@@ -5,8 +5,12 @@
   min-width: 100% !important;
 
   .warning {
-    padding: 5px 10px;
     margin-left: -16px;
-    border-radius: 10px;
+
+    &--text {
+      padding: 5px 10px;
+      margin-left: 4px;      
+      border-radius: 10px;  
+    }
   }
 }
