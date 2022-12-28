@@ -5,6 +5,10 @@
         CaMackley
       </h1>
     </div>
+
+    <span class="warning bg-warning">
+      This website is under development
+    </span>
   </div>
 </template>
 

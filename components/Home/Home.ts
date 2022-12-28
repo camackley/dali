@@ -10,7 +10,7 @@ export default Vue.extend({
   data() {
     return {
       avatarUrl:
-        'https://firebasestorage.googleapis.com/v0/b/dali-camackley.appspot.com/o/website%20assets%2Favatar.webp?alt=media&token=5a482f4b-719c-4829-988c-a84adacbdf53',
+        'https://firebasestorage.googleapis.com/v0/b/dali-camackley.appspot.com/o/website%20assets%2Favatar.webp?alt=media&token=5339f2c6-53c6-44ae-8039-f0f74835e660',
       nameAudioUrl:
         'https://firebasestorage.googleapis.com/v0/b/dali-camackley.appspot.com/o/website%20assets%2FName.m4a?alt=media&token=44da4f84-2f39-42e4-9d3b-efc3d6ef9457',
       torreUrl: 'https://torre.co',

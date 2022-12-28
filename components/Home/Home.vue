@@ -7,7 +7,6 @@
         alt="Mackley Carmona photos"
         :width="avatarImgSizes.width"
         :height="avatarImgSizes.height"
-        loading="lazy"
       />
     </div>
     

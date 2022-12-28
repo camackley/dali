@@ -2,10 +2,22 @@
   "About": {
     "description": "Auto imported from components/About/About.ts"
   },
+  "Home": {
+    "description": "Auto imported from components/Home/Home.ts"
+  },
   "Navbar": {
     "description": "Auto imported from components/Navbar/Navbar.ts"
   },
-  "Home": {
-    "description": "Auto imported from components/Home/Home.ts"
+  "AboutSkills": {
+    "description": "Auto imported from components/About/Skills/Skills.js"
+  },
+  "MaterialCmChip": {
+    "description": "Auto imported from components/Material/CmChip/CmChip.vue"
+  },
+  "MaterialCmButton": {
+    "description": "Auto imported from components/Material/CmButton/CmButton.vue"
+  },
+  "MaterialCmButtonIcons": {
+    "description": "Auto imported from components/Material/CmButton/Icons.ts"
   }
 }

@@ -16,8 +16,21 @@
   }
 
   &__summary {
-    font-size: $body;
-    text-align: justify;
+    padding: 0;
+
+    &--text {
+     font-size: $body;
+     text-align: justify;
      font-weight: lighter;
+    }
+  }
+
+  &__skills {
+    &--chips {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
   }
 }

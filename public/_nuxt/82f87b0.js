@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{380:function(n,t,e){"use strict";e.r(t);var o=e(8);t.default=o.default.extend({name:"About",data:function(){return{}}})}}]);
