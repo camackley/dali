@@ -33,6 +33,7 @@
       </div>
 
       <cm-button
+        class="button"
         text="Open Curriculum Vitae"
         icon="UilExternalLinkAlt"
         icon-direction="end"

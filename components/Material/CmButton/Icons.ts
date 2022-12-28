@@ -1,8 +1,10 @@
 
 import {
-  UilExternalLinkAlt
+  UilEnvelopeAlt,
+  UilExternalLinkAlt,
 } from '@iconscout/vue-unicons';
 
 export default {
+  UilEnvelopeAlt,
   UilExternalLinkAlt
 }

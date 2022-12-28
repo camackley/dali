@@ -1,6 +1,7 @@
 <template>
   <button
     class="button"
+    :style="componentStyle"
     type="button"
     @click="() => $emit('on-lick')"
   >
@@ -46,6 +47,13 @@
       iconSize: {
         type: String,
         default: "16px"
+      },
+      componentStyle: {
+        type: Object,
+        default: () => ({
+          "--color": "#F7F7F7",
+          "--background-color": "#608A76" 
+        })
       }
     }
   })

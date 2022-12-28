@@ -1,8 +1,8 @@
 <template>
   <div class="navbar container">
     <div class="row">
-      <h1 class="navbar__logo col">
-        CaMackley
+      <h1 class="navbar__logo">
+        <cm-logo/>
       </h1>
     </div>
 

@@ -1,8 +1,9 @@
 <template>
   <div class="index">
-    <Navbar/>
-    <Home/>
-    <About/>
+    <navbar/>
+    <home/>
+    <about/>
+    <cm-footer/>
   </div>
 </template>
 

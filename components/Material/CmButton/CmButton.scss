@@ -4,9 +4,8 @@
   width: 100%;
   border: none;
   font-size: 18px;
-  margin-top: 24px;
-  color: $cm-gray;
+  color: var(--color);
   border-radius: 5px;
   font-weight: lighter;
-  background-color: $cm-green;
+  background-color: var(--background-color);
 }
