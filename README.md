@@ -9,7 +9,7 @@ __________
   - [Index](#index)
   - [Project description](#project-description)
   - [Start local server](#start-local-server)
-  - [Deploy in the cloud](#deploy-in-production)
+  - [Deploy in production](#deploy-in-production)
     - [Url Web site](#web-site-url)
 
 __________
