@@ -31,7 +31,7 @@ __________
 
         npm run dev
 
-## Deploy in the production
+## Deploy in production
 
 1) Build the project
 
