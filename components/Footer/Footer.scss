@@ -6,6 +6,11 @@
   margin: 0 -16px -16px -16px;
   background-color: $cm-green;
   color: $cm-withe;
+  justify-content: space-between;
+
+  .col-12 {
+    padding: 0;
+  }
 
   &__social-networks {
     margin-top: 24px;
@@ -35,6 +40,16 @@
 
     .button {
       width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .footer__contact {
+      padding: 70px 0 0 0;
+
+      .button {
+        width: 100%;
+      }
     }
   }
 }

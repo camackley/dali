@@ -1,4 +1,5 @@
 import Vue from "vue";
+import { IDevice } from '@/store/Utils'
 
 import SocialNetworks from "@/components/Footer/SocialNetworks/SocialNetworks";
 import { SocialNetworkIcons } from "@/components/Footer/SocialNetworks/SocialNetworks";
@@ -28,7 +29,10 @@ export default Vue.extend({
     },
     socialNetworks(): ISocialNetwork[] {
       return SocialNetworks;
-    }
+    },
+    device(): IDevice {
+      return this.$store.state.Utils.device;
+    },
   },
   methods: {
     sendEmail(): void {

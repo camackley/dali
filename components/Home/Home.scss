@@ -46,5 +46,32 @@
       text-decoration: underline;
     }
   }
+
+  @media screen and (max-width: 992px) {
+    &__avatar {
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    display: flex;
+    justify-content: center;
+
+    &__caption {
+      h2 {
+        font-size: $dt-title;
+        position: absolute;
+        top: 40%;
+      }
+
+      p {
+        font-size: $dt-sub-title;
+        line-height: 45px;
+        font-weight: lighter;
+        position: absolute;
+        top: 55%;
+      }
+    }
+  }
 }
 

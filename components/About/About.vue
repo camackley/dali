@@ -1,6 +1,6 @@
 <template>
   <div class="row about">
-    <div class="col-12 col-md about__summary">
+    <div class="col-12 col-md-6 about__summary">
       <h2>About me</h2>
       <p class="about__summary--text">
         User-centered software engineer with 4+ years of experience in full-stack software development. I specialize in designing and developing high-quality and scalable software solutions that prioritize the user experience, both on the web and mobile.
@@ -23,13 +23,16 @@
         I'm excited about opportunities to build solutions that positively impact users and work with world-class teams.
       </p>
 
-      <div class="about__skills--chips">
-        <cm-chip
-          v-for="skill in skills"
-          :key="skill.text"
-          :text="skill.text"
-          :path="skill.path"
-        />
+      <div class="about__skills">
+        <h4>Skills</h4>
+        <div class="about__skills--chips">
+          <cm-chip
+            v-for="skill in skills"
+            :key="skill.text"
+            :text="skill.text"
+            :path="skill.path"
+          />
+        </div>
       </div>
 
       <cm-button
@@ -39,9 +42,7 @@
         icon-direction="end"
         @on-click="openCV"
       />
-
     </div>
-    <div class="col-md"/>
   </div>
 </template>
 

@@ -14,7 +14,7 @@ export default Vue.extend({
   },
   data() {
     return {
-      CVUrl: "https://firebasestorage.googleapis.com/v0/b/dali-camackley.appspot.com/o/website%20assets%2Fmackley_resume.pdf?alt=media&token=b691c9a4-297c-4871-a857-105cd7eedf48"
+      CVUrl: "https://shorturl.at/bcqBE"
     }
   },
   computed: {

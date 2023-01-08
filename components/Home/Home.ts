@@ -44,6 +44,13 @@ export default Vue.extend({
         height: this.windowsSize.width * 0.3,
       }
     },
+    iconVolumeSize(): string {
+      if (this.device.isMobileOrTablet) {
+        return "18px"
+      }
+
+      return "35px"
+    }
   },
   mounted() {
     this.loadNameAudio()

@@ -35,6 +35,6 @@ module.exports = {
   content: {},
   build: {},
   server: {
-    port: process.env.PORT || 3001,
+    port: process.env.PORT || 3001
   },
 }

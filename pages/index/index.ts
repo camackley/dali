@@ -1,4 +1,5 @@
 import Vue from "vue";
+import { IDevice } from '@/store/Utils'
 
 import About from "@/components/About/About";
 import Footer from '@/components/Footer/Footer'
@@ -22,4 +23,9 @@ export default Vue.extend({
 
     dispatchOrAddError("Utils/setDeviceInfo", device);
   },
+  computed: {
+    device(): IDevice {
+      return this.$store.state.Utils.device;
+    },
+  }
 });
