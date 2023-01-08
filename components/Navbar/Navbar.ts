@@ -7,10 +7,5 @@ export default Vue.extend({
   name: 'Navbar',
   components: {
     CmLogo
-  },
-  computed: {
-    device(): IDevice {
-      return this.$store.state.Utils.device;
-    },
   }
 })

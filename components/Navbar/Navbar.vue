@@ -5,16 +5,6 @@
         <cm-logo/>
       </h1>
     </div>
-
-    <span
-      v-if="!$device.isMobileOrTablet"
-      class="warning"
-    >
-      ⚠️
-      <span class="warning--text bg-warning">
-        This website is under development
-      </span>
-    </span>
   </div>
 </template>
 
