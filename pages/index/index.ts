@@ -7,7 +7,7 @@ import Home from '@/components/Home/Home'
 import Navbar from '@/components/Navbar/Navbar'
 
 export default Vue.extend({
-  head(): any {
+  head() {
     const title = "Mackley Carmona | Experienced Full-Stack Software Engineer Focused on User Experience";
     const description = "Full-stack software engineer with 4+ years experience designing & developing scalable solutions that prioritize user experience on web and mobile. Notable achievements include creating a hybrid codebase, designing a scalable user management system, and improving mobile app performance through clean architecture.";
     const ogImage = "https://firebasestorage.googleapis.com/v0/b/dali-camackley.appspot.com/o/website%20assets%2FogImage.png?alt=media&token=f0b71d31-c143-44b8-8504-416797a59feb";

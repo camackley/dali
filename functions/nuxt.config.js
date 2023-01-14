@@ -45,6 +45,7 @@ module.exports = {
     '@nuxtjs/device',
     '@nuxtjs/router-extras',
     '@nuxt/image',
+    '@nuxtjs/google-analytics'
   ],
   modules: ['bootstrap-vue/nuxt', '@nuxtjs/axios', '@nuxt/content'],
   axios: {
@@ -58,4 +59,7 @@ module.exports = {
   server: {
     port: process.env.PORT || 3001
   },
+  googleAnalytics: {
+    id: "G-9HN2E5DL1X"
+  }
 }

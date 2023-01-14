@@ -2,11 +2,11 @@
   "About": {
     "description": "Auto imported from components/About/About.ts"
   },
-  "Footer": {
-    "description": "Auto imported from components/Footer/Footer.ts"
-  },
   "Home": {
     "description": "Auto imported from components/Home/Home.ts"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer/Footer.ts"
   },
   "Navbar": {
     "description": "Auto imported from components/Navbar/Navbar.ts"
@@ -14,19 +14,19 @@
   "AboutSkills": {
     "description": "Auto imported from components/About/Skills/Skills.js"
   },
-  "FooterSocialNetworks": {
-    "description": "Auto imported from components/Footer/SocialNetworks/SocialNetworks.js"
-  },
   "MaterialCmButton": {
     "description": "Auto imported from components/Material/CmButton/CmButton.vue"
   },
   "MaterialCmButtonIcons": {
     "description": "Auto imported from components/Material/CmButton/Icons.ts"
   },
-  "MaterialCmLogo": {
-    "description": "Auto imported from components/Material/CmLogo/CmLogo.vue"
-  },
   "MaterialCmChip": {
     "description": "Auto imported from components/Material/CmChip/CmChip.vue"
+  },
+  "FooterSocialNetworks": {
+    "description": "Auto imported from components/Footer/SocialNetworks/SocialNetworks.js"
+  },
+  "MaterialCmLogo": {
+    "description": "Auto imported from components/Material/CmLogo/CmLogo.vue"
   }
 }

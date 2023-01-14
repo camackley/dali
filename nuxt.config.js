@@ -44,7 +44,7 @@ module.exports = {
     '@nuxt/typescript-build',
     '@nuxtjs/device',
     '@nuxtjs/router-extras',
-    '@nuxt/image',
+    '@nuxt/image'
   ],
   modules: ['bootstrap-vue/nuxt', '@nuxtjs/axios', '@nuxt/content'],
   axios: {
@@ -57,5 +57,5 @@ module.exports = {
   build: {},
   server: {
     port: process.env.PORT || 3001
-  },
+  }
 }
