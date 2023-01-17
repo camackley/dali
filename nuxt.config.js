@@ -3,7 +3,7 @@ module.exports = {
   head: {
     title: "Mackley Carmona | Experienced Full-Stack Software Engineer Focused on User Experience",
     htmlAttrs: {
-      lang: 'en',
+      lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
@@ -27,10 +27,8 @@ module.exports = {
       { hid: "robots", property: "robots", name: "robots", content: "index, follow" },
     ],
     link: [
-      [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { hid: "canonical", rel: "canonical", href: "https://camackley.com" }
-      ],
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { hid: "canonical", rel: "canonical", href: "https://camackley.com" }
     ],
     __dangerouslyDisableSanitizers: ["script"],
   },
