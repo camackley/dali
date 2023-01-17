@@ -9,40 +9,20 @@ export default Vue.extend({
   },
   data() {
     return {
-      avatarUrl:
-        'https://firebasestorage.googleapis.com/v0/b/dali-camackley.appspot.com/o/website%20assets%2Favatar.webp?alt=media&token=5339f2c6-53c6-44ae-8039-f0f74835e660',
       nameAudioUrl:
         'https://firebasestorage.googleapis.com/v0/b/dali-camackley.appspot.com/o/website%20assets%2FName.m4a?alt=media&token=44da4f84-2f39-42e4-9d3b-efc3d6ef9457',
       torreUrl: 'https://torre.co',
+      avatar: {
+        id: 0,
+        url: 'https://firebasestorage.googleapis.com/v0/b/dali-camackley.appspot.com/o/website%20assets%2Favatar.webp?alt=media&token=5339f2c6-53c6-44ae-8039-f0f74835e660',
+        size: 0
+      },
       audio: undefined as undefined | HTMLAudioElement,
     }
   },
   computed: {
     device(): IDevice {
       return this.$store.state.Utils.device;
-    },
-    windowsSize(): { [key: string]: number } {
-      if ((this, process.client)) {
-        return {
-          width: window.innerWidth,
-          height: window.innerHeight,
-        }
-      }
-
-      return {}
-    },
-    avatarImgSizes(): { [key: string]: number } {
-      if (this.device.isMobile) {
-        return {
-          width: this.windowsSize.width * 0.9,
-          height: this.windowsSize.width * 0.9,
-        }
-      }
-
-      return {
-        width: this.windowsSize.width * 0.3,
-        height: this.windowsSize.width * 0.3,
-      }
     },
     iconVolumeSize(): string {
       if (this.device.isMobileOrTablet) {
@@ -53,7 +33,16 @@ export default Vue.extend({
     }
   },
   mounted() {
-    this.loadNameAudio()
+    this.loadNameAudio();
+
+    this.$nextTick(() => {
+      window.addEventListener('resize', () => this.renderAvatar());
+    });
+
+    this.renderAvatar();
+  },
+  beforeDestroy() { 
+    window.removeEventListener('resize', () => {}); 
   },
   methods: {
     loadNameAudio(): void {
@@ -61,6 +50,22 @@ export default Vue.extend({
     },
     playNameAudio(): void {
       this.audio?.play()
+    },
+    getAvatarImgSize(): number {
+      const width = window.innerWidth;
+
+      return width < 768
+        ? width * 0.9
+        : width * 0.3;
+    },
+    renderAvatar(): void {
+      const avatarSize = this.getAvatarImgSize();
+      this.avatar = {
+        ...this.avatar,
+        size: avatarSize
+      };
+
+      this.avatar.id += 1;
     },
   },
 })

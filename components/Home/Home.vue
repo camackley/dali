@@ -1,17 +1,18 @@
 <template>
   <div class="row home">
     <div class="col col-md-5 pl-md-5 home__avatar">
-      <nuxt-img 
+      <nuxt-img
+        :key="avatar.id"
         class="home__avatar--img"
-        :src="avatarUrl"
+        :src="avatar.url"
         alt="Mackley Carmona photo"
-        :width="avatarImgSizes.width"
-        :height="avatarImgSizes.height"
+        :width="avatar.size"
+        :height="avatar.size"
         preload
       />
     </div>
 
-    <div class="home__caption col col-md-4 p-md-0">
+    <div class="home__caption col-md col-lg-4 p-md-0">
       <h2>
         Hello there! 👀
       </h2>

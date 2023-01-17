@@ -36,6 +36,7 @@ export default Vue.extend({
         { hid: "robots", property: "robots", name: "robots", content: "index, follow" },
       ],
       link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { hid: "canonical", rel: "canonical", href: "https://camackley.com" }
       ],
       __dangerouslyDisableSanitizers: ["script"],
