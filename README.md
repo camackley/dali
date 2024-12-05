@@ -1,52 +1,46 @@
-# [Dali](https://github.com/camackley/dali)
+# Getting Started with Create React App
 
-Welcome to the **Dali** repository, the frontend of CaMackley (Mackley Carmona's personal brand) website.
-__________
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Index
+## Available Scripts
 
-- [Dali](#dali)
-  - [Index](#index)
-  - [Project description](#project-description)
-  - [Start local server](#start-local-server)
-  - [Deploy in production](#deploy-in-production)
-    - [Url Web site](#web-site-url)
+In the project directory, you can run:
 
-__________
+### `npm start`
 
-## Project description
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The project was built with vue, typescript, sass, Nuxt to implement server side rendering and using **npm** as package manager ([packages.json](./package.json)), this project also implements [Bootstrap](https://getbootstrap.com).
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-The project use [Firebase](https://firebase.google.com/) as hosting for deploy the app in the cloud.
-__________
+### `npm test`
 
-## Start local server
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-1) In the first time run
+### `npm run build`
 
-        npm install
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-2) In the **CMD** run
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-        npm run dev
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Deploy in production
+### `npm run eject`
 
-1) Build the project
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-        firebase deploy --only functions
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-2) Save all changes in [Git](https://git-scm.com/)
-3) Merge in the **main** branch
-4) Send changes to remote repository
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-        git push origin <main>
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-5) Deploy Web Site in Firebase Hosting
+## Learn More
 
-        firebase deploy --only hosting
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Web site url
-
-        http://camackley.com
+To learn React, check out the [React documentation](https://reactjs.org/).
