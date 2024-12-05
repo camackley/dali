@@ -1,0 +1,108 @@
+.home {
+  &__hero {
+    display: flex;
+    flex-direction: row;
+
+    &--image {
+      width: 50%;
+      height: 100vh;
+      background-image: url("https://firebasestorage.googleapis.com/v0/b/dali-camackley.appspot.com/o/website%20assets%2Fcamackley_event.png?alt=media&token=547d1b09-4d94-4ef0-a933-7ae8153c1fb0");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--body {
+      width: 50%;
+      padding: 24px;
+
+      &__app-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 18px;
+
+        a svg {
+          color: #ffffff;
+          font-size: 24px;
+        }
+      }
+
+      &__texts {
+        color: #ffffff;
+        margin: auto;
+        width: 80%;
+        margin-top: 30%;
+
+        h1 {
+          font-size: 57px;
+          line-height: 64px;
+        }
+
+        h2 {
+          margin: 36px 0;
+          font-size: 32px;
+          line-height: 40px;
+          font-weight: 400;
+        }
+
+        &__contact {
+          display: flex;
+          flex-direction: row;
+          gap: 24px;
+          margin-top: 36px;
+
+          a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            color: #ffffff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 990px) {
+    &__hero {
+      flex-direction: column-reverse;
+
+      &--image {
+        width: 100%;
+        height: 50vh;
+      }
+
+      &--body {
+        width: 90%;
+
+        &__app-bar {
+          justify-content: flex-start;
+        }
+
+        &__texts {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 10px 24px;
+  color: #ffffff;
+  border-radius: 16px;
+  width: fit-content;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #944097;
+  text-transform: uppercase;
+  align-items: center;
+}
