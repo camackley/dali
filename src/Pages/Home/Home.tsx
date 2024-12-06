@@ -1,6 +1,7 @@
 import "./Home.scss";
 
 import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -25,13 +26,14 @@ function HomePage() {
       icon: <TwitterIcon />,
       url: "https://x.com/camackley",
     },
+    {
+      icon: <GitHubIcon />,
+      url: "https://github.com/camackley",
+    },
   ];
 
   const handleOnClick = () => {
-    window.open(
-      "https://firebasestorage.googleapis.com/v0/b/dali-camackley.appspot.com/o/website%20assets%2Fmackley_carmona_cv.pdf?alt=media&token=68a854ea-39e0-4299-9018-530b87df1d2c",
-      "_blank"
-    );
+    window.open("http://cv.camackley.com", "_blank");
   };
 
   return (

@@ -2,6 +2,7 @@
   &__hero {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 
     &--image {
       width: 50%;
