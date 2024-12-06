@@ -69,7 +69,7 @@ function HomePage() {
                 <EmailIcon />
                 m@camackley
               </a>
-              <a href={socialMedia[0].url}>
+              <a href="tel:+573135432386">
                 <LocalPhoneIcon />
                 +573135432386
               </a>

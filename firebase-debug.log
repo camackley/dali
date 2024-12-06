@@ -865,3 +865,102 @@
 [info] 
 [info] Project Console: https://console.firebase.google.com/project/dali-camackley/overview
 [info] Hosting URL: https://davli2.web.app
+[debug] [2024-12-06T13:13:15.656Z] ----------------------------------------------------------------------
+[debug] [2024-12-06T13:13:15.657Z] Command:       /Users/camackley/.nvm/versions/node/v21.7.1/bin/node /Users/camackley/.nvm/versions/node/v21.7.1/bin/firebase deploy --only hosting --debug
+[debug] [2024-12-06T13:13:15.658Z] CLI Version:   13.16.0
+[debug] [2024-12-06T13:13:15.658Z] Platform:      darwin
+[debug] [2024-12-06T13:13:15.658Z] Node Version:  v21.7.1
+[debug] [2024-12-06T13:13:15.658Z] Time:          Fri Dec 06 2024 08:13:15 GMT-0500 (Colombia Standard Time)
+[debug] [2024-12-06T13:13:15.658Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-06T13:13:15.659Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-12-06T13:13:15.715Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-06T13:13:15.716Z] > authorizing via signed-in user (mackleycarmonaalvarez@gmail.com)
+[debug] [2024-12-06T13:13:15.716Z] [iam] checking project dali-camackley for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-06T13:13:15.716Z] > refreshing access token with scopes: []
+[debug] [2024-12-06T13:13:15.716Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-06T13:13:15.717Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-06T13:13:15.999Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-12-06T13:13:16.000Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-12-06T13:13:16.016Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-06T13:13:16.017Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-06T13:13:16.030Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dali-camackley:testIamPermissions [none]
+[debug] [2024-12-06T13:13:16.030Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dali-camackley:testIamPermissions x-goog-quota-user=projects/dali-camackley
+[debug] [2024-12-06T13:13:16.030Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dali-camackley:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-06T13:13:16.617Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dali-camackley:testIamPermissions 200
+[debug] [2024-12-06T13:13:16.618Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dali-camackley:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-06T13:13:16.619Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dali-camackley [none]
+[debug] [2024-12-06T13:13:17.013Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dali-camackley 200
+[debug] [2024-12-06T13:13:17.013Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dali-camackley {"projectId":"dali-camackley","projectNumber":"403051716346","displayName":"dali-camackley","name":"projects/dali-camackley","resources":{"hostingSite":"dali-camackley","storageBucket":"dali-camackley.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_9ec557f4-384b-4709-b919-84ba53f1b7af"}
+[info] 
+[info] === Deploying to 'dali-camackley'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-12-06T13:13:17.021Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/davli2/versions [none]
+[debug] [2024-12-06T13:13:17.021Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/davli2/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-12-06T13:13:18.548Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/davli2/versions 200
+[debug] [2024-12-06T13:13:18.548Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/davli2/versions {"name":"projects/403051716346/sites/davli2/versions/e3bb0164ed71ca58","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[davli2]: beginning deploy... 
+[info] i  hosting[davli2]: found 15 files in build 
+[debug] [2024-12-06T13:13:18.565Z] [hosting] uploading with 200 concurrency
+[debug] [2024-12-06T13:13:18.656Z] [hosting] hash cache [YnVpbGQ] stored for 15 files
+[debug] [2024-12-06T13:13:18.657Z] [hosting][hash queue][FINAL] {"max":86,"min":4,"avg":10.733333333333333,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":90}
+[debug] [2024-12-06T13:13:18.657Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/403051716346/sites/davli2/versions/e3bb0164ed71ca58:populateFiles [none]
+[debug] [2024-12-06T13:13:18.657Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/403051716346/sites/davli2/versions/e3bb0164ed71ca58:populateFiles {"files":{"/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/manifest.json":"377ef4c2fdb7d47fd855aa2d56e56a30e2ee0464201f53857a3efbd7c373a80e","/index.html":"c4cf315ad6f2526f3bb21eaba36e04cfa561a53caabc2376c888cafcce0b94fe","/asset-manifest.json":"5067a9b51e26893f53025fae8df8ed7277a4e0c74730495fa40526f9e4e4fbcc","/404.html":"b6abfbdc894d37c260154e281499dc6415bb6ad76b32f01ef94dee93aa897ac4","/logo192.png":"23e1cd22054d2b9ab498b3b864450c1abbbe1a1bce4a3c6391241f329a2f7b91","/static/js/main.3d2a07b8.js.LICENSE.txt":"0f59caafaf161d244e82100cd65c5bccccc1bf5b4c3c2aa66c46fed6af047d05","/static/css/main.78326171.css.map":"1c000626723ce6dfa321dae28f07f1a0bd45c55fe690a7b34270cbd7a76c1c07","/static/js/453.b3fb102e.chunk.js":"f37582c74f229023536c46b0409488763387d176710cc9103f519ae0e10c23b5","/static/css/main.78326171.css":"497dda2b18bb874036270d9f095d7dad161f58ae7fd1074e8f8bb22b3ec09353","/static/js/453.b3fb102e.chunk.js.map":"8427162d5eedb31de5a1a7ab4e4fca426ea8f9de5993559c50e12037b6d5894a","/favicon.ico":"0e303eae6a99217e14e5fff3c0e33ce2d31a52dda4ef36ee4abdc8ff3a48a849","/logo512.png":"0884e0250b847671312502c7c06b582544dea088cfae08a6d27f4085c066c647","/static/js/main.3d2a07b8.js":"d8f7acde389b98f6a8991816b9eb5bd4271ee76f1661275385ef6ff5d0619f71","/static/js/main.3d2a07b8.js.map":"ad0432a1ec1d4d6abb4fb63c2e78befd88330aaae9dddf2dee2258ca27682c9d"}}
+[debug] [2024-12-06T13:13:19.236Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/403051716346/sites/davli2/versions/e3bb0164ed71ca58:populateFiles 200
+[debug] [2024-12-06T13:13:19.237Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/403051716346/sites/davli2/versions/e3bb0164ed71ca58:populateFiles {"uploadRequiredHashes":["5067a9b51e26893f53025fae8df8ed7277a4e0c74730495fa40526f9e4e4fbcc","d8f7acde389b98f6a8991816b9eb5bd4271ee76f1661275385ef6ff5d0619f71","c4cf315ad6f2526f3bb21eaba36e04cfa561a53caabc2376c888cafcce0b94fe","ad0432a1ec1d4d6abb4fb63c2e78befd88330aaae9dddf2dee2258ca27682c9d"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files"}
+[debug] [2024-12-06T13:13:19.238Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/5067a9b51e26893f53025fae8df8ed7277a4e0c74730495fa40526f9e4e4fbcc [none]
+[debug] [2024-12-06T13:13:19.239Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/5067a9b51e26893f53025fae8df8ed7277a4e0c74730495fa40526f9e4e4fbcc [stream]
+[debug] [2024-12-06T13:13:19.240Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/d8f7acde389b98f6a8991816b9eb5bd4271ee76f1661275385ef6ff5d0619f71 [none]
+[debug] [2024-12-06T13:13:19.240Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/d8f7acde389b98f6a8991816b9eb5bd4271ee76f1661275385ef6ff5d0619f71 [stream]
+[debug] [2024-12-06T13:13:19.242Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/c4cf315ad6f2526f3bb21eaba36e04cfa561a53caabc2376c888cafcce0b94fe [none]
+[debug] [2024-12-06T13:13:19.242Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/c4cf315ad6f2526f3bb21eaba36e04cfa561a53caabc2376c888cafcce0b94fe [stream]
+[debug] [2024-12-06T13:13:19.245Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/ad0432a1ec1d4d6abb4fb63c2e78befd88330aaae9dddf2dee2258ca27682c9d [none]
+[debug] [2024-12-06T13:13:19.245Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/ad0432a1ec1d4d6abb4fb63c2e78befd88330aaae9dddf2dee2258ca27682c9d [stream]
+[debug] [2024-12-06T13:13:19.246Z] [hosting][populate queue][FINAL] {"max":582,"min":582,"avg":582,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":590}
+[debug] [2024-12-06T13:13:19.246Z] [hosting] uploads queued: 4
+[debug] [2024-12-06T13:13:20.119Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/5067a9b51e26893f53025fae8df8ed7277a4e0c74730495fa40526f9e4e4fbcc 200
+[debug] [2024-12-06T13:13:20.120Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/5067a9b51e26893f53025fae8df8ed7277a4e0c74730495fa40526f9e4e4fbcc [stream]
+[debug] [2024-12-06T13:13:20.284Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/d8f7acde389b98f6a8991816b9eb5bd4271ee76f1661275385ef6ff5d0619f71 200
+[debug] [2024-12-06T13:13:20.285Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/d8f7acde389b98f6a8991816b9eb5bd4271ee76f1661275385ef6ff5d0619f71 [stream]
+[debug] [2024-12-06T13:13:20.287Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/c4cf315ad6f2526f3bb21eaba36e04cfa561a53caabc2376c888cafcce0b94fe 200
+[debug] [2024-12-06T13:13:20.287Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/c4cf315ad6f2526f3bb21eaba36e04cfa561a53caabc2376c888cafcce0b94fe [stream]
+[debug] [2024-12-06T13:13:20.469Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/ad0432a1ec1d4d6abb4fb63c2e78befd88330aaae9dddf2dee2258ca27682c9d 200
+[debug] [2024-12-06T13:13:20.470Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/davli2/versions/e3bb0164ed71ca58/files/ad0432a1ec1d4d6abb4fb63c2e78befd88330aaae9dddf2dee2258ca27682c9d [stream]
+[debug] [2024-12-06T13:13:20.471Z] [hosting][upload queue][FINAL] {"max":1232,"min":883,"avg":1052.75,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":1234}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[davli2]: file upload complete 
+[debug] [2024-12-06T13:13:20.472Z] [hosting] deploy completed after 1920ms
+[debug] [2024-12-06T13:13:20.472Z] [
+  {
+    "config": {
+      "site": "davli2",
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    "version": "projects/403051716346/sites/davli2/versions/e3bb0164ed71ca58"
+  }
+]
+[info] i  hosting[davli2]: finalizing version... 
+[debug] [2024-12-06T13:13:20.475Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/davli2/versions/e3bb0164ed71ca58 updateMask=status%2Cconfig
+[debug] [2024-12-06T13:13:20.475Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/davli2/versions/e3bb0164ed71ca58 {"status":"FINALIZED","config":{}}
+[debug] [2024-12-06T13:13:21.036Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/davli2/versions/e3bb0164ed71ca58 200
+[debug] [2024-12-06T13:13:21.036Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/davli2/versions/e3bb0164ed71ca58 {"name":"projects/403051716346/sites/davli2/versions/e3bb0164ed71ca58","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-12-06T13:13:17.837604Z","createUser":{"email":"MACKLEYCARMONAALVAREZ@gmail.com"},"finalizeTime":"2024-12-06T13:13:20.946177Z","finalizeUser":{"email":"MACKLEYCARMONAALVAREZ@gmail.com"}}
+[debug] [2024-12-06T13:13:21.036Z] [hosting] finalized version for davli2:[object Object]
+[info] ✔  hosting[davli2]: version finalized 
+[info] i  hosting[davli2]: releasing new version... 
+[debug] [2024-12-06T13:13:21.037Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/davli2/channels/live/releases versionName=projects%2F403051716346%2Fsites%2Fdavli2%2Fversions%2Fe3bb0164ed71ca58
+[debug] [2024-12-06T13:13:21.037Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/davli2/channels/live/releases {}
+[debug] [2024-12-06T13:13:21.935Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/davli2/channels/live/releases 200
+[debug] [2024-12-06T13:13:21.936Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/davli2/channels/live/releases {"name":"projects/403051716346/sites/davli2/channels/live/releases/1733490801171000","version":{"name":"projects/403051716346/sites/davli2/versions/e3bb0164ed71ca58","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-12-06T13:13:17.837604Z","createUser":{"email":"MACKLEYCARMONAALVAREZ@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI49up0quFlScUZZIvr6bc65A0Cdq3db_yJT7XXlUHFwmsGqAKGMg"},"finalizeTime":"2024-12-06T13:13:20.946177Z","finalizeUser":{"email":"MACKLEYCARMONAALVAREZ@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI49up0quFlScUZZIvr6bc65A0Cdq3db_yJT7XXlUHFwmsGqAKGMg"}},"type":"DEPLOY","releaseTime":"2024-12-06T13:13:21.171Z","releaseUser":{"email":"MACKLEYCARMONAALVAREZ@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI49up0quFlScUZZIvr6bc65A0Cdq3db_yJT7XXlUHFwmsGqAKGMg"}}
+[debug] [2024-12-06T13:13:21.936Z] [hosting] release: {"name":"projects/403051716346/sites/davli2/channels/live/releases/1733490801171000","version":{"name":"projects/403051716346/sites/davli2/versions/e3bb0164ed71ca58","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-12-06T13:13:17.837604Z","createUser":{"email":"MACKLEYCARMONAALVAREZ@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI49up0quFlScUZZIvr6bc65A0Cdq3db_yJT7XXlUHFwmsGqAKGMg"},"finalizeTime":"2024-12-06T13:13:20.946177Z","finalizeUser":{"email":"MACKLEYCARMONAALVAREZ@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI49up0quFlScUZZIvr6bc65A0Cdq3db_yJT7XXlUHFwmsGqAKGMg"}},"type":"DEPLOY","releaseTime":"2024-12-06T13:13:21.171Z","releaseUser":{"email":"MACKLEYCARMONAALVAREZ@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI49up0quFlScUZZIvr6bc65A0Cdq3db_yJT7XXlUHFwmsGqAKGMg"}}
+[info] ✔  hosting[davli2]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/dali-camackley/overview
+[info] Hosting URL: https://davli2.web.app
